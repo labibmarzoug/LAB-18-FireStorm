@@ -5,7 +5,7 @@ Ce laboratoire consiste à étudier l’application Android FireStorm dans le bu
 
 L’approche adoptée repose sur plusieurs techniques complémentaires, notamment l’analyse statique, l’observation dynamique du comportement de l’application, ainsi que l’exploitation de services externes comme Firebase.
 
-#Étude du mécanisme de génération du mot de passe
+Étude du mécanisme de génération du mot de passe
 
 L’analyse du code a permis d’identifier une fonction clé nommée Password().
 Cette fonction est responsable de la construction du mot de passe utilisé par l’application.
@@ -25,7 +25,7 @@ Un point notable est que cette fonction de génération n’est pas directement 
 <img width="923" height="238" alt="image" src="https://github.com/user-attachments/assets/b30cee93-8c67-446b-bc0e-25854986f055" />
 
 
-#Mise en place de l’instrumentation dynamique
+Mise en place de l’instrumentation dynamique
 
 Afin d’observer le comportement de l’application en exécution, l’utilisation de Frida s’impose.
 
@@ -37,7 +37,7 @@ Cette technique est particulièrement utile lorsque certaines parties du code ne
 <img width="902" height="73" alt="image" src="https://github.com/user-attachments/assets/8163a08e-ce88-4424-800a-0888368bdb03" />
 
 
-#Récupération du mot de passe
+Récupération du mot de passe
 
 Un script Frida a été développé pour cibler la fonction responsable de la génération du mot de passe.
 
@@ -51,6 +51,6 @@ Une fois les identifiants récupérés, un script Python utilisant Pyrebase a é
 Cette connexion permet d’accéder aux données stockées dans la base et d’extraire les informations nécessaires, notamment le flag du challenge.
 
 
-<img width="1376" height="768" alt="R4C6dJus" src="https://github.com/user-attachments/assets/e6c26f00-db9f-498b-9a23-39fc5d08ca29" />
+<img width="1317" height="731" alt="image" src="https://github.com/user-attachments/assets/a257e30f-1742-447f-abb7-b028041ea118" />
 
 
